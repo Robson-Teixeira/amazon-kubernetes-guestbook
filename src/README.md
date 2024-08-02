@@ -23,3 +23,4 @@
 - `kubectl expose deployment <nome-deployment> --type=NodePort` expor aplicação
     >Configurar Security Groups do tipo _Custom TCP Rule_, com origem _My IP_, para a porta exposta e associar à instância (Actions > Networking > Change Security Groups)
     >Testar acesso por meio do endereço da instância (Public DNS)
+- `minikube ip` obter endereço IP do cluster
