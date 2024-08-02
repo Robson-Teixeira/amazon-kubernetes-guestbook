@@ -12,6 +12,7 @@
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 - [Docker](https://www.docker.com/)
 - [Minikube](https://kubernetes.io/docs/tasks/tools/#minikube)
+    >Necessário ter instalado o Kubectl e Hypervisor (KVM, VirtualBox, etc)
 
 - `su -` acessar root
 - `minikube start --vm-driver=none` iniciar minikube sem VirtualBox
