@@ -36,3 +36,5 @@
 - `kubectl version` versão Kubernetes
 
 >Arquivos .yaml disponíveis nas pastas **app** e **db**
+>Editar Security Group com a porta do pod de serviço frontend (Security Groups > <group-name> > Inbound)
+>Testar acesso por meio do endereço da instância (Public DNS)
