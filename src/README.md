@@ -24,3 +24,15 @@
     >Configurar Security Groups do tipo _Custom TCP Rule_, com origem _My IP_, para a porta exposta e associar à instância (Actions > Networking > Change Security Groups)
     >Testar acesso por meio do endereço da instância (Public DNS)
 - `minikube ip` obter endereço IP do cluster
+
+## Deploy Aplicação Guestbook
+- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/redis-master-deployment.yaml` redis master
+- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/redis-master-service.yaml` serviço redis master (comunicação da app com o redis para gravação dos dados)
+- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/redis-slave-deployment.yaml` redis slave
+- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/redis-slave-service.yaml` serviço redis slave (comunicação da app com o redis para a leitura dos dados)
+- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/frontend-deployment.yaml` frontend
+- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/frontend-service.yaml` serviço frontend
+- `kubectl get all` visualizar o resultado
+- `kubectl version` versão Kubernetes
+
+>Arquivos .yaml disponíveis nas pastas **app** e **db**
