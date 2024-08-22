@@ -38,3 +38,8 @@
 >Arquivos .yaml disponíveis nas pastas **app** e **db**
 >Editar Security Group com a porta do pod de serviço frontend (Security Groups > <group-name> > Inbound)
 >Testar acesso por meio do endereço da instância (Public DNS)
+
+## Criação Cluster
+- IAM > Roles > Criar role (autorização para utilização do EKS) > EKS
+- VPC - Virtual Private Cloud (rede virtual)
+- CloudFormation > Create Stack > (Specify an Amazon S3 template URL > amazon-eks-vpc-sample.yaml)
