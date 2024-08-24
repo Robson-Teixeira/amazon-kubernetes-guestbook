@@ -69,3 +69,6 @@
 ## Escalar Cluster
 >Acessar Auto Scaling Groups e editar o cluster modificando a quantidade máxima, mínima e desejável de nós
 - `kubectl scale deploy <nome-pod> --replicas=X` altera a quantidade de POD's
+
+## Monitoramento
+Seguir as instruções de **Deploy and Access the Kubernetes Dashboard** disponíveis [aqui](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#deploying-the-dashboard-ui)
