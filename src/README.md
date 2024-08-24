@@ -65,3 +65,7 @@
     >Em ClusterName utilizar o nome do cluster criado anteriormente    
 >Para incluir os nodes no cluster é necessário aplicar um configmap (aws-auth-cm.yaml) com a devida role ARN da instância (NodeInstanceRole disponível na stack de nodes criada anteriormente)
 - `kubectl get nodes` informações do cluster
+
+## Escalar Cluster
+>Acessar Auto Scaling Groups e editar o cluster modificando a quantidade máxima, mínima e desejável de nós
+- `kubectl scale deploy <nome-pod> --replicas=X` altera a quantidade de POD's
