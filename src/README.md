@@ -72,3 +72,10 @@
 
 ## Monitoramento
 Seguir as instruções de **Deploy and Access the Kubernetes Dashboard** disponíveis [aqui](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#deploying-the-dashboard-ui)
+
+## Rollback
+Para eliminar o que foi feito, seguir:
+- Excluir stack de nodes no CloudFormation
+- Parar ou terminar instância EC2
+- Excluir cluster EKS
+- Excluir VPC (caso exista) no CloudFormation
