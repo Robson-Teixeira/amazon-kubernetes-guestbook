@@ -62,3 +62,5 @@
 - `kubectl get services` ou `kubectl get svc` lista serviços
 - CloudFormation > Create Stack > (Choose a template > amazon-eks-nodegroup.yaml)
     >Em ClusterName utilizar o nome do cluster criado anteriormente    
+>Para incluir os nodes no cluster é necessário aplicar um configmap (aws-auth-cm.yaml) com a devida role ARN da instância (NodeInstanceRole disponível na stack de nodes criada anteriormente)
+- `kubectl get nodes` informações do cluster
