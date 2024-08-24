@@ -54,3 +54,9 @@
 - `aws eks list-clusters` lista clusters
 - `aws eks describe-cluster --name <nome-cluster>` detalha cluster
     - `aws eks describe-cluster --name <nome-cluster> | grep status` detalha status do cluster (ativo, inativo)
+
+## Criação Nodes
+>Necessário baixar, instalar e conceder permissões para o **AWS IAM Authenticator** que irá permitir a comunicação entre kubectl e o cluster AWS
+
+- `aws eks update-kubeconfig --name <nome-cluster>` atualiza/gera configuração para comunicação kubectl x EKS
+- `kubectl get services` ou `kubectl get svc` lista serviços
