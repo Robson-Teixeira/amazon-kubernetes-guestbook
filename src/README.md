@@ -43,3 +43,11 @@
 - IAM > Roles > Criar role (autorização para utilização do EKS) > EKS
 - VPC - Virtual Private Cloud (rede virtual)
 - CloudFormation > Create Stack > (Specify an Amazon S3 template URL > amazon-eks-vpc-sample.yaml)
+- `aws eks create-cluster --name <nome-cluster> --role-arn<role arn> --resources-vpc-config subnetIds=<subnet ID1, subnet ID2..., securityGroupsIds=<group ID>>` criar cluster no AWS CLI (ou via console AWS)
+    >`role-arn` disponível na role configurada na AWS
+
+    >`resources-vpc-config subnetIds` disponível nas subredes da VPC
+
+    >`securityGroupsIds` disponível nos security groups da VPC
+
+    >Caso esteja configurado Multi-Factor Authentication, não será possível seguir via console AWS, pois em determinado momento dependerá da AWS CLI
