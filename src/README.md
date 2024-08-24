@@ -26,12 +26,13 @@
 - `minikube ip` obter endereço IP do cluster
 
 ## Deploy Aplicação Guestbook
-- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/redis-master-deployment.yaml` redis master
-- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/redis-master-service.yaml` serviço redis master (comunicação da app com o redis para gravação dos dados)
-- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/redis-slave-deployment.yaml` redis slave
-- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/redis-slave-service.yaml` serviço redis slave (comunicação da app com o redis para a leitura dos dados)
-- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/frontend-deployment.yaml` frontend
-- `kubectl apply -f https://raw.githubusercontent.com/ricardomerces/guestbook-app/master/frontend-service.yaml` serviço frontend
+- `kubectl apply -f redis-master-deployment.yaml` redis master
+- `kubectl apply -f redis-master-service.yaml` serviço redis master (comunicação da app com o redis para gravação dos dados)
+- `kubectl apply -f redis-slave-deployment.yaml` redis slave
+- `kubectl apply -f redis-slave-service.yaml` serviço redis slave (comunicação da app com o redis para a leitura dos dados)
+- `kubectl apply -f frontend-deployment.yaml` frontend
+- `kubectl apply -f frontend-service.yaml` serviço frontend
+    >Em **produção** utilizar o frontend-service-lb.yaml que aplica um serviço do tipo LoadBalancer
 - `kubectl get all` visualizar o resultado
 - `kubectl version` versão Kubernetes
 
