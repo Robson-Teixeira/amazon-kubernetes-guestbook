@@ -51,3 +51,6 @@
     >`securityGroupsIds` disponível nos security groups da VPC
 
     >Caso esteja configurado Multi-Factor Authentication, não será possível seguir via console AWS, pois em determinado momento dependerá da AWS CLI
+- `aws eks list-clusters` lista clusters
+- `aws eks describe-cluster --name <nome-cluster>` detalha cluster
+    - `aws eks describe-cluster --name <nome-cluster> | grep status` detalha status do cluster (ativo, inativo)
