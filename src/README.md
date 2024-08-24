@@ -42,7 +42,7 @@
 ## Criação Cluster
 - IAM > Roles > Criar role (autorização para utilização do EKS) > EKS
 - VPC - Virtual Private Cloud (rede virtual)
-- CloudFormation > Create Stack > (Specify an Amazon S3 template URL > amazon-eks-vpc-sample.yaml)
+- CloudFormation > Create Stack > (Choose a template > amazon-eks-vpc-sample.yaml)
 - `aws eks create-cluster --name <nome-cluster> --role-arn<role arn> --resources-vpc-config subnetIds=<subnet ID1, subnet ID2..., securityGroupsIds=<group ID>>` criar cluster no AWS CLI (ou via console AWS)
     >`role-arn` disponível na role configurada na AWS
 
@@ -60,3 +60,5 @@
 
 - `aws eks update-kubeconfig --name <nome-cluster>` atualiza/gera configuração para comunicação kubectl x EKS
 - `kubectl get services` ou `kubectl get svc` lista serviços
+- CloudFormation > Create Stack > (Choose a template > amazon-eks-nodegroup.yaml)
+    >Em ClusterName utilizar o nome do cluster criado anteriormente    
