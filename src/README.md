@@ -15,7 +15,7 @@
     >Necessário ter instalado o Kubectl e Hypervisor (KVM, VirtualBox, etc)
     >Setar as permissões sugeridas após instalação
     >Alterar caminho do usuário de root para home/ubuntu, por exemplo, no arquivo .kube/config
-
+- [AWS CLI](https://aws.amazon.com/pt/cli/)
 - `su -` acessar root
 - `minikube start --vm-driver=none` iniciar minikube sem VirtualBox
 - `minikube status` verificar status
